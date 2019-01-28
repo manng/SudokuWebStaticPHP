@@ -124,40 +124,4 @@
  		}
  	});
 
-/*
- 	$.support.cors = true;
-  	$.ajax({
-  		url: restUrl,
- 		method: "post",
- 		data: constraintsString,
- 		dataType: "json",
- 		headers: {"Accept": "application/json"},
- 		contentType: "application/json"
-  		}).done(function(data){
- 			EntryForm.displaySolution(data);
- 		})
- 		.fail(function(jqxhr){
- 			alert("Call Failed with HTTP Error Code: " + jqxhr.status + 
- 			      "\n"  + jqxhr.getResponseHeader("Error Header"));
- 			console.log("response headers = " + jqxhr.getAllResponseHeaders());
- 			for (property in jqxhr){
- 			    console.log("property " + property + " has value " + jqxhr[property]);
- 			}
- 		});
-*/
-/*
- 	$.post({
-  		url: restUrl,
- 		data: constraintsString,
- 		dataType: "json"
- 		//headers: {"Accept": "application/json"},
- 		//contentType: "application/json"
-  		}).done(function(data){
- 			EntryForm.displaySolution(data);
- 		})
- 		.fail(function(jqxhr){
- 			alert("Call Failed with HTTP Error Code: " + jqxhr.status + 
- 			      "\n"  + jqxhr.getResponseHeader("Error Header"));
- 		});
-*/
 }
