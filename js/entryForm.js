@@ -70,6 +70,14 @@
  		$(table).append(tableRow);
  	}
  	$('#entry-form').append(table);
+ 	var p1 = document.createElement("p");
+ 	$(p1).text('Written by Gary Mann');
+ 	$(p1).css("color", "black");
+ 	$('#entry-form').append(p1);
+ 	var p2 = document.createElement("p");
+ 	$(p2).text('gary.mann1@optusnet.com.au');
+ 	$(p2).css("color", "black");
+ 	$('#entry-form').append(p2);
  	return spinnerArray;
  }
  
