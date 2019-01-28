@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sudoku</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: lightgrey;">
+      <div class="container">
+        <div class="navbar-header">
+        	<button type="button" id="newButton">New</button>
+        	<button type="button" id="solveButton">Solve</button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5" id="entry-form">
+          </div>
+          <div class="col-sm-2" id="middle-space"></div>
+          <div class="col-sm-5" id="solution">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/entryForm.js"></script>
+	<script type="text/javascript">
+	    globalDim = 3;
+	    //URL to REST service goes here
+	    restUrl = "https://sudoku-spring-boot.herokuapp.com/sudoku";
+		$(function() {
+			EntryForm.createForm(globalDim);
+		});
+		$('#solveButton').on("click",EntryForm.submit);
+		$('#newButton').on("click", EntryForm.reset);
+	</script>
+</body>
+</html>
