@@ -78,6 +78,13 @@
  	$(p2).text('gary.mann1@optusnet.com.au');
  	$(p2).css("color", "black");
  	$('#entry-form').append(p2);
+    var p3 = document.createElement("p");
+    $(p3).text('The solver has been implemented as a REST API.  Documentation for this API can be found ');
+    var a = document.createElement('a');
+    $(a).text('here');
+    $(a).attr('href', 'https://sudoku-spring-boot.herokuapp.com/swagger-ui.html');
+    $(p3).append(a);
+    $('#entry-form').append(p3);
  	return spinnerArray;
  }
  
