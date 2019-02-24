@@ -81,11 +81,13 @@
     var p3 = document.createElement("p");
     $(p3).css("color", "black");
     $(p3).css('font-size', 'small');
-    $(p3).text('The solver has been implemented as a REST API.  Documentation for this API can be found ');
+    var span = document.createElement("span");
+    $(span).text('The solver has been implemented as a REST API.  Documentation for this API can be found ');
     var a = document.createElement('a');
     $(a).text('here');
     $(a).attr('href', 'https://sudoku-spring-boot.herokuapp.com/swagger-ui.html');
-    $(p3).append(a);
+    $(span).append(a);
+    $(p3).append(span);
     $('#entry-form').append(p3);
  	return spinnerArray;
  }
