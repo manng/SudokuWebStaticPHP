@@ -79,6 +79,7 @@
  	$(p2).css("color", "black");
  	$('#entry-form').append(p2);
     var p3 = document.createElement("p");
+
     $(p3).css("color", "black");
     $(p3).css('font-size', 'small');
     var span = document.createElement("span");
