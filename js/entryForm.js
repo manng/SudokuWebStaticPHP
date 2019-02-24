@@ -79,6 +79,7 @@
  	$(p2).css("color", "black");
  	$('#entry-form').append(p2);
     var p3 = document.createElement("p");
+ 	$(p3).css("color", "black");
     $(p3).text('The solver has been implemented as a REST API.  Documentation for this API can be found ');
     var a = document.createElement('a');
     $(a).text('here');
